@@ -1688,7 +1688,7 @@ module.exports = function (params) {
          * @private
          */
         var connectParams = {
-            'connect timeout': 2000,
+            'connect timeout': 10000,
             'force new connection': true, // Don't try to reuse old connection.
             'sync disconnect on unload': true, // have Socket.io call disconnect() on the browser unload event.
             reconnect: false,
